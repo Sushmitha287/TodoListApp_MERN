@@ -1,0 +1,146 @@
+
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+
+ * {
+   margin: 0;
+ }
+
+ /* img,
+ picture,
+ video,
+ canvas,
+ svg {
+   display: block;
+   max-width: 100%;
+ } */
+
+ input,
+ button,
+ textarea,
+ select {
+   font: inherit;
+ }
+
+ p,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   overflow-wrap: break-word;
+ }
+
+ /* APP */
+
+ body {
+   background-color: #07000d;
+   /* background-image: url("https://www.transparenttextures.com/patterns/cartographer.png"); */
+   color: cyan;
+   font-family: 'Rubik', sans-serif;
+ }
+
+ /* container */
+
+ .container {
+   max-width: 1000px;
+   margin: 0 auto;
+ }
+
+ /* todos list */
+
+ .title {
+   text-align: center;
+   font-size: 2.6rem;
+   padding: 3rem 0 1rem;
+   text-shadow: 1px 2px 3px cyan;
+ }
+
+ .todos {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+ }
+
+ .todo {
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem 1rem;
+
+   background-color: rgba(255, 255, 255, 0.1);
+   width: 50%;
+   font-size: 1.2rem;
+   border-radius: 1rem;
+   transition: all 0.2s;
+   text-shadow: 1px 1px 3px cyan;
+
+   &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+   }
+ }
+
+ .mutations {
+   display: flex;
+   gap: 0.75rem;
+ }
+
+ .todo__status,
+ .todo__delete,
+ .todo__edit{
+   border: none;
+   padding: 0;
+   line-height: 1;
+   cursor: pointer;
+   transition: all 0.2s;
+   background: none;
+   color: white;
+   font-size: 1.1rem;
+
+   &:hover {
+     transform: scale(1.15);
+   }
+ }
+
+ .todo__status {
+  font-size: 1.3rem;
+ }
+
+
+ /* form */
+ .form {
+   display: flex;
+   gap: 0.5rem;
+   width: 50%;
+   margin: 1rem auto;
+ }
+
+ .form__input {
+   flex: 1;
+   padding: 0.5rem 0.75rem;
+   border-radius: 0.25rem;
+   border: none;
+   outline: none;
+
+   &:focus,
+   &:hover {
+    background-color: white;
+   }
+ }
+
+ .form__button {
+  border: none;
+  background-color: rgba(149, 240, 238, 0.7);
+  cursor: pointer;
+  color: white;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: rgba(95, 0, 179, 0.5) ;
+  }
+ }
